@@ -34,7 +34,7 @@ echo ">> Reloading nginx..."
 service nginx reload
 
 echo "---------------------------------"
-echo ">> Starting turkd server..."
+echo ">> Starting ghost server..."
 
 forever start --pidFile ./.pid --uid "bitcoinalliance" -a -p . -l ./logs/bitcoinalliance.log -e ./logs/bitcoinalliance.err.log -o ./logs/bitcoinalliance.out.log -c "npm start --production" ./
 
